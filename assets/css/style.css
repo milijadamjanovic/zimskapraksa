@@ -1,0 +1,487 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/************************************** CSS Reset ******************************************/
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a {
+    font-family: 'WebFont', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*
+Colors :
+    body : #fefefe;
+    navigaton : #737373
+    active navigaton : #2ecc71
+    #2cc26b;
+    separator : #dadada
+    button: #2cc26b
+    p : #aeadad
+
+*/
+
+.arrow-color {
+    color: #efefef;
+}
+
+.arrow-color:hover {
+    color: #2ecc71;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'WebFont', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #fefefe;
+    height: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.pt-50 {
+    padding-top: 50px !important;
+}
+
+.pb-50 {
+    padding-bottom: 50px !important;
+}
+
+nav {
+    border-top: 1px solid #dadada;
+}
+
+nav .nav-link {
+    padding: 15px;
+    font-size: 18px;
+    color: #737373 !important;
+}
+
+nav .active a {
+    color: #2ecc71 !important;
+}
+
+.col-fifth {
+    width: 100%;
+}
+
+.top-bar {
+    display: table;
+    width: 100%;
+}
+
+.logo a {
+    display: block;
+    padding: .5rem 0;
+
+}
+
+.logo, .social-icons {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.social-networks {
+    display: inline-block;
+}
+
+.social-networks .list-item {
+    display: inline;
+}
+
+#hero {
+    background: url("../img/slider-background.jpg") left top no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 220px;
+}
+
+.slider-background {
+    width: 100%;
+}
+
+.devices img {
+    width: 100%;
+}
+
+.portfolio-desc {
+    font-family: 'WebFont', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 15px;
+    color: #aeadad;
+    max-width: 825px;
+}
+
+.portfolio {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 15px 40px 15px 20px;
+    background: #2ecc71;
+    color: #fff;
+    border: 1px solid #2ecc71;
+    text-decoration: none;
+}
+
+.portfolio:hover {
+    background: #fff;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+#video-player-section {
+    background: rgb(239, 239, 239);
+    /**   Nisam siguran da li je ova boja,
+                                           Mislim da je greska u dizajnu, s obzirom da
+                                           background za video section nema nikakav opacity
+                                           a ipak se vidi "sun burst" od pozadine prethodne sekcije
+                                           zato sto je layer iznad. Ako je to bio cilj onda moja greska... :)
+                                       ****/
+}
+
+.video-player {
+    margin-top: -175px;
+    padding: 40px 0;
+}
+
+.get-to-know-us {
+    text-align: left;
+    font-size: 24px;
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #737373;
+    margin-bottom: 15px;
+}
+
+.video-desc, .portfolio-description {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    color: #8a8888;
+}
+
+.portfolio-description {
+    text-align: center;
+    padding: 25px 150px;
+}
+
+#portfolio-section {
+    position: relative;
+    padding-top: 50px;
+}
+
+.portfolio-container {
+    width: 100%;
+    clear: both;
+}
+
+.portfolio-title {
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    color: #8a8888;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.hover-link-image {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/link.png") center center no-repeat;
+}
+
+.hover-link:hover .hover-link-image {
+    visibility: visible;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #737373;
+    margin-bottom: 15px;
+}
+
+.slider-paragraph {
+    font-size: 14px;
+    line-height: 25px;
+    color: #8a8888;
+    text-align: center;
+    padding: 0 170px;
+}
+
+#callout-section-2 {
+    background: #322f2f;
+    padding: 50px;
+}
+
+.callout-section-title {
+    color: #efefef;
+    font-size: 24px;
+    font-family: 'WebFont', Arial, sans-serif;
+}
+
+#page-title {
+    background: #2ecc71;
+    padding: 40px;
+}
+
+#page-title h1 {
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+#contact {
+    padding: 50px;
+}
+
+#mapa {
+    height: 500px;
+}
+
+.contact-form-title,
+.contact-info-title,
+.store-hours-title {
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #8a8888;
+    font-size: 25px;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.contact-form-description,
+.contact-info-desc {
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #8a8888;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+.contact-list,
+.contact-info-desc {
+    padding-bottom: 20px;
+}
+
+.contact-list li,
+.address-list li,
+.store-hours li {
+    font-weight: bold;
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #8a8888;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.address-list li,
+.store-hours li {
+    font-weight: normal;
+}
+
+.contact-list li a {
+    font-weight: normal;
+    color: #2cc26b;
+    text-decoration: none;
+}
+
+.contact-list li span {
+    font-weight: normal;
+}
+
+.address-list {
+    padding-bottom: 50px;
+}
+
+.store-hours li .day,
+.store-hours li .time {
+    font-family: 'WebFont', Arial, sans-serif;
+    color: #8a8888;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.store-hours li .day,
+.store-hours li .time {
+    text-align: left;
+}
+
+.closed{
+    width: 75px;
+}
+
+.success-message,
+.spinner{
+    color: #2cc26b;
+    display: none;
+}
+
+.form-input {
+    border: 2px solid #8a8888;
+    border-radius: unset !important;
+    color: #737373 !important;
+    padding: 15px;
+}
+
+.submit-message-button {
+    text-transform: uppercase;
+    background-color: #2ecc71;
+    color: #fff;
+    border: 1px solid #2ecc71;
+    padding: 14px;
+}
+
+.submit-message-button:hover {
+    background-color: #fff;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+footer {
+    background: #efefef;
+    color: #a5a5a5;
+    padding: 30px;
+}
+
+footer a {
+    color: #a5a5a5;
+}
+
+.footer-navigation {
+    display: inline-block;
+}
+
+.footer-navigation li {
+    display: inline;
+}
+
+.footer-navigation li span {
+    padding: 0 5px;
+}
+
+.footer-navigation li:hover a {
+    color: #2ecc71;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 960px) {
+    .portfolio-desc {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .top-bar {
+        padding: 30px 0;
+    }
+
+    nav .nav-link {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .logo a {
+        padding-left: .5rem;
+    }
+
+    .col-fifth {
+        width: 20%;
+        float: left;
+    }
+
+    .right-image {
+        position: absolute;
+        top: 7px;
+        right: 11px;
+    }
+
+    .left-image {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 10;
+    }
+}
